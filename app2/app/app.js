@@ -12,6 +12,7 @@ angular.module('myApp', ['ngRoute','angular-responsive','door3.css'])
         }
 		 if(responsiveHelper.isTablet()){
             device = 'tablet';
+			maincss='/semantic/semantic.min.css';
         }
 	
         $routeProvider.when('/view1', {templateUrl: device + '/partial1.html', controller: 'myController',css:[device+maincss,device +'/style.css']});
